@@ -2,5 +2,13 @@
     "name": "@xyz/ui",
     "version": "1.0.0",
     "private": true,
-    "main": "index.js"
+    "main": "index.js",
+    "exports": {
+        "./tsComponent":"./src/tsComponent.tsx",
+        "./jsComponent":"./src/jsComponent.jsx"
+    },
+    "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    }
 }
